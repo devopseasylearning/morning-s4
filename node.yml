@@ -5,6 +5,7 @@ metadata:
   name: nginx
   labels:
     env: test
+    app: app
   namespace: peter
 spec:
   containers:
@@ -12,4 +13,4 @@ spec:
     image: nginx
     imagePullPolicy: IfNotPresent
   nodeSelector:
-    preprod: development
+    testing: testing
